@@ -6,11 +6,11 @@ end
 
 def summon_captain_planet(captain)
   captain_planet = []
-  i = 0 
-  while i < captain.length 
+  i = 0
+  while i < captain.length
     captain_planet << captain[i].capitalize + "!"
-    i += 1 
-  end 
+    i += 1
+  end
   captain_planet
 end
 
@@ -22,6 +22,6 @@ def find_the_cheese(cheese)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese.find do |type|
   cheese_types.include?(type)
-  
+
   end
 end
