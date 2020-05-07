@@ -5,7 +5,7 @@ def roll_call_dwarves(dwarves)# code an argument here
 end
 
 def summon_captain_plane(captain)
-  captain.collect { |i| i.capitalize << "!" }
+  captain.map { |planeteer| planeteer.capitalize + "!" }
 end
 
 def long_planeteer_calls(calls)
@@ -13,6 +13,7 @@ def long_planeteer_calls(calls)
 end
 
 def find_the_cheese(cheese)
-  cheese.find { |i| i == "cheddar" || i == "gouda" || i == "camembert" }
+  cheese.find do |item|
+  cheese_types.include?(item)
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
