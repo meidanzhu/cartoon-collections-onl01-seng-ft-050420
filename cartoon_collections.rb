@@ -5,13 +5,13 @@ def roll_call_dwarves(dwarves)# code an argument here
 end
 
 def summon_captain_planet(captain)
-  captain = []
-  i = 0
-  while i < array.length
-    nu_array << array[i].capitalize + "!"
-    i += 1
-  end
-  captain
+  captain_planet = []
+  i = 0 
+  while i < captain.length 
+    captain_planet << captain[i].capitalize + "!"
+    i += 1 
+  end 
+  captain_planet
 end
 
 def long_planeteer_calls(calls)
@@ -22,6 +22,6 @@ def find_the_cheese(cheese)
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese.find do |type|
   cheese_types.include?(type)
-
+  
   end
 end
